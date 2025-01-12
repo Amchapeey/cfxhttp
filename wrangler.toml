@@ -1,4 +1,4 @@
-name = "error"  # Replace with your worker name
+name = "man"  # Replace with your worker name
 type = "javascript"  # Use "esm" for ES modules if you're using ES Modules
 account_id = "c6601c63dbb4784928f937403d8480ab"  # Replace with your Cloudflare account ID
 compatibility_date = "2025-01-08"  # Update with today's date
@@ -9,16 +9,12 @@ main = "_worker.js"  # Replace "index.js" with your script filename
 # Environment-specific configuration
 [env.production]
   # Environment variables for production
-  vars = { 
-    XHTTP_PATH = "/iw76t6r0",
-    WS_PATH = "/Tech01",
-    UUID = "e7b5d7c4-66bf-4aaf-8208-b9a03521e034"  # Example UUID
-  }
+  vars.XHTTP_PATH = "/iw76t6r0"
+  vars.WS_PATH = "/Tech01"
+  vars.UUID = "e7b5d7c4-66bf-4aaf-8208-b9a03521e034"  # Example UUID
 
 [env.staging]
   # Environment variables for staging (optional, you can remove if not needed)
-  vars = { 
-    XHTTP_PATH = "/staging-path",
-    WS_PATH = "/staging-tech",
-    WORKER_UUID = "c3a5357f-3b58-4c32-9ec5-fd998fa1f6b8"  # Example UUID for staging
-  }
+  vars.XHTTP_PATH = "/staging-path"
+  vars.WS_PATH = "/staging-tech"
+  vars.WORKER_UUID = "c3a5357f-3b58-4c32-9ec5-fd998fa1f6b8"  # Example UUID for staging
