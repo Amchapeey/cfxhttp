@@ -23,9 +23,12 @@
  1. 在 DNS 配置中添加一个二级域名的 A 记录，随便填个 IPv4 地址，开启小黄云
  1. 下载 [releases](https://github.com/vrnobody/cfxhttp/releases) 中的 cfxhttp.zip，解压得到 _worker.js
  1. 新建一个 workers 把 _worker.js 里面的代码复制进去
- 1. 在 workers 的配置页面添加路由，指向上面新加的二级域名，例如: `sub-domain.your-website.com/*`
- 1. 在设置面板中添加环境变量： `UUID` 和 `XHTTP_PATH`
 
+      [push](https://deploy.workers.cloudflare.com/?url=https://github.com/Amchapeey/cfxhttp)
+
+ 
+ 1. 在 workers 的配置页面添加路由，指向上面新加的二级域名，例如: `sub-domain.your-website.com/*`
+ 1. 在设置面板中添加环境变量： `UUID` 和 `XHTTP_PATT			                  
 访问 `https://sub-domain.your-website.com/(XHTTP_PATH)/?fragment=true&uuid=(UUID)`  
 获取 xhttp 协议的客户端 `config.json`。  
 *xhttp 协议只能部署到 workers，不能部署到 pages 详见 [issue #2](https://github.com/vrnobody/cfxhttp/issues/2)*  
