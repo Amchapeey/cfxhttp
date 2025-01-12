@@ -26,7 +26,7 @@ enabled = true
 [vars]
 
 # vless uuid
-UUID = ""
+UUID = "89774ec2-be27-7088-0dcd-7fb2ccf94721"
 
 # cloudflare reverse proxy
 PROXY = ""
