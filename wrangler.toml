@@ -1,8 +1,8 @@
 #:schema node_modules/wrangler/config-schema.json
 name = "cfxhttp"
-main = "src/index.js"
+#main = "src/index.js"
 main = "src/_worker.js"
-compatibility_date = "2024-11-11"
+compatibility_date = "2025-5-7"
 compatibility_flags = ["nodejs_compat"]
 
 # Workers Logs
@@ -29,7 +29,7 @@ enabled = true
 UUID = "89774ec2-be27-7088-0dcd-7fb2ccf94721"
 
 # cloudflare reverse proxy
-PROXY = ""
+PROXY = "143.198.213.197:443"
 
 # https://github.com/cloudflare/workerd/issues/1401
 # [dev]
